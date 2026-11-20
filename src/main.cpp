@@ -244,7 +244,7 @@ void setup() {
   tft.fillScreen(BG);
 
   touchSPI.begin(TOUCH_SCK, TOUCH_MISO, TOUCH_MOSI, TOUCH_CS);
-  touch.begin(touchSPI);
+  touch.begin();
   touch.setRotation(1);
 
   SPI.begin(18, 19, 23, SD_CS);
